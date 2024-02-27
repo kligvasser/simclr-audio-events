@@ -1,0 +1,40 @@
+output_dir: ./results/simclr-audioset-vitb32
+
+dataset:
+  dataset_name: AudioSetViews
+  batch_size: 256
+  num_workers: 32 
+  configuration:
+    df_path: /storage11/datasets/audioset/audios/train-full-records-hot1.pkl 
+    sample_rate: 8000
+    num_views: 2
+    num_repeat: 2
+    max_size: null
+    dir_noises: /storage11/datasets/arabic-speech-corpus/wav
+
+training:
+  seed: 123
+  gradient_accumulation_steps: 1
+  learning_rate: 1e-4
+  lr_scheduler: cosine
+  lr_warmup_steps: 100
+  temperature: 0.5
+  num_epochs: 100
+  save_every_epoch: 10
+  mixed_precision: fp16
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 1e-2
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  scale_lr: False
+  resume_from_checkpoint: null
+
+model:
+  model_name: ViTSimCLR
+  configuration:
+    base_model: vit_b_32
+    out_dim: 512
+    n_fft: 446
+    hop_length: 358
+    normalized: False

@@ -1,0 +1,38 @@
+name: audio-ssl
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8.5
+  - pip=23.3
+  - cudatoolkit=11.8
+  - pip:
+    - torch
+    - torchvision
+    - torchaudio
+    - torchlibrosa
+    - diffusers
+    - transformers
+    - opencv-python
+    - numpy
+    - imageio==2.9.0
+    - imageio-ffmpeg==0.4.2
+    - librosa
+    - pandas
+    - swifter
+    - scipy
+    - tqdm
+    - omegaconf
+    - tensorboard
+    - tensorboardX
+    - torch-tb-profiler
+    - seaborn
+    - scikit-learn
+    - ipython
+    - ipykernel
+    - black
+    - h5py
+    - julius
+    - torch-pitch-shift
+    - diffuser
+    - accelerate
