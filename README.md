@@ -32,4 +32,4 @@ accelerate launch --config_file configs/accelerate.yaml train.py --config ./conf
 ```
 
 ## External links
-https://drive.google.com/drive/folders/1l9Q7hEfWZDiS6P0NLrNvzSRT63f_wWH-?usp=sharing
+Model-Zoo can be found in [link]([https://pages.github.com/](https://drive.google.com/drive/folders/1l9Q7hEfWZDiS6P0NLrNvzSRT63f_wWH-?usp=sharing)https://drive.google.com/drive/folders/1l9Q7hEfWZDiS6P0NLrNvzSRT63f_wWH-?usp=sharing).
